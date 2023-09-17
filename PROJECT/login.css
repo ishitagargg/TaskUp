@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 30px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+}
+
+.logo {
+    text-decoration: none;
+    display: flex;
+    padding-left: 80px;
+}
+
+.logo p {
+    font-size: 40px;
+    color: black;
+    font-weight: 1000;
+    margin-left: 5px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.navbar {
+    margin-right: 150px;
+    display: flex;
+}
+
+
+.navbar div {
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: #aa80ff;
+    background-color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    transition: 0.2s;
+
+}
+
+.navbar div:hover {
+    transform: translateY(2px);
+}
+
+
+.home {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.content {
+    width: 700px;
+    margin-left: 50px;
+}
+
+.content h1 {
+    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.content p {
+    font-size: 18px;
+    margin: 20px 0px 40px;
+}
+
+
+.emaill {
+    border: 1px solid grey;
+    inline-size: 45%;
+    max-block-size: 20px;
+    border-radius: 7px;
+    padding: 20px;
+    margin-top: 5px;
+    transition: 0.2s;
+}
+
+.emaill:hover {
+    border: 2px solid #aa80ff;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    width: 275px;
+    height: 50px;
+    transition: 0.2s;
+}
+
+.btn  {
+    margin-top: 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 55px;
+    background-color: #aa80ff;
+    border: 2px solid #aa80ff;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+}
+.btn button{
+    background-color: #aa80ff;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+.btn:hover {
+    transform: translateY(2px);
+}
+
+.star {
+    position: absolute;
+    bottom: 40px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 20px;
+}
+
+.star img {
+    margin-left: 3px;
+}
+
+.star p {
+    color: grey;
+    margin-left: 7px;
+    margin-top: 2px;
+}
+    .har{
+        animation: fadeIn;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+      }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

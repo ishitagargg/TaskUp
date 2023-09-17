@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" type="image/x-icon" href="./icons8-double-left-64.png">
+</head>
+<body>
+
+
+    <div class="sign">
+        <h1>Sign up for FREE</h1> 
+        <p>and start using TaskUp in seconds!</p>
+
+    
+<form id="form">
+        <input type="email" class="emaill" id="email" placeholder="Enter your email" size="30" required />
+        <input type="password" class="password" id="password" placeholder="Enter your password" size="30" minlength="8" required />
+        <div class="btn">
+        <button  id="submit" >Done</button>
+        </div>
+        </form>
+    </div>
+
+
+    <script>
+const form = document.querySelector('form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const email = event.target.email.value;
+  if (validateEmail(email)) {
+    window.location.href = '/main.html';
+  } else {
+    alert('Invalid email address.');
+  }
+});
+function validateEmail(email) {
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
+    </script>
+</body>
+</html>
